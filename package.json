@@ -1,11 +1,17 @@
 {
   "name": "untoken",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A token replacement tool for text.",
   "homepage": "https://github.com/rmariuzzo/untoken#readme",
   "author": "Rubens Mariuzzo <rubens@mariuzzo.com>",
   "license": "MIT",
-  "keywords": ["token", "untoken", "replace", "replacement", "template"],
+  "keywords": [
+    "token",
+    "untoken",
+    "replace",
+    "replacement",
+    "template"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
