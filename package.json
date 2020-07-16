@@ -1,0 +1,46 @@
+{
+  "name": "untoken",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/rmariuzzo/untoken#readme",
+  "author": "Rubens Mariuzzo <rubens@mariuzzo.com>",
+  "license": "MIT",
+  "keywords": [],
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmariuzzo/untoken.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rmariuzzo/untoken/issues"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "jest",
+    "postversion": "git push origin && git push origin --tags"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@types/node": "^14.0.23",
+    "eslint": "^7.4.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.2",
+    "typescript": "^3.9.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
